@@ -36,10 +36,10 @@ function onValueId(e) {
     .then(() => success())
     .catch(fetchError);
   refs.loaderEl.classList.remove('visually-hidden');
-  refs.catInfoEl.classList.add('visually-hidden');
 }
 
 function fetchError() {
+  refs.catInfoEl.classList.add('visually-hidden');
   Report.failure(refs.error.textContent, '');
 }
 

@@ -39,6 +39,7 @@ function onValueId(e) {
 }
 
 function fetchError() {
+   refs.loaderEl.classList.add('visually-hidden');
   refs.catInfoEl.classList.add('visually-hidden');
   Report.failure(refs.error.textContent, '');
 }
